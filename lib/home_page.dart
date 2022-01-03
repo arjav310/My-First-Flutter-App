@@ -52,6 +52,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("My First App"),
+      ),
       body: Container(
         padding: EdgeInsets.only(top: 20),
         color: isSwitchChecked ? Colors.black : Colors.white,
@@ -59,9 +62,6 @@ class _HomePageState extends State<HomePage> {
           // mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
           children: [
-            AppBar(
-              title: Text("My First App"),
-            ),
             Center(
               child: Switch(
                 value: isSwitchChecked,
